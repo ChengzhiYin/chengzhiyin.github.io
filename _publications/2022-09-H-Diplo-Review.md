@@ -9,5 +9,5 @@ venue: 'H-Diplo'
 link: 'https://networks.h-net.org/node/28443/discussions/10684768/h-diplo-article-review-1137-chinese-advisory-groups-first'
 citation: 'Yin, Chengzhi. &quot;Review of The Chinese Advisory Groups in the First Indochina War: Their Formation,
 Evolution, and Disbandment,&quot; by Xiaohe Cheng, <i>Cold War History</i> 22, no.22 (2022): 195-213.
-H-Diplo, September 14, 2022. https://networks.h-net.org/node/28443/discussions/10684768/h-diplo-article-review-1137-chinese-advisory-groups-first.'
+H-Diplo, September 14, 2022.'
 ---
