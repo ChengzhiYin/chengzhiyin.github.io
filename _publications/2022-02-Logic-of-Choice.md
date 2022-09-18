@@ -1,7 +1,7 @@
 ---
 title: "Logic of Choice: China’s Binding Strategies toward North Korea, 1965–1970"
 collection: publications
-permalink: /publication/2022-01-Logic-of-Choice
+permalink: /publication/2022-02-Logic-of-Choice
 # excerpt: 'Employing archives from China, the United States, and Russia, this article explores the question of how China chose its binding strategy to stop North Korea from tilting towards the Soviet Union in the late 1960s.'
 date: 2022-07-11
 venue: 'Security Studies'

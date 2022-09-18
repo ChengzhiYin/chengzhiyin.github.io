@@ -1,7 +1,7 @@
 ---
 title: "Review of &quot;The Chinese Advisory Groups in the First Indochina War&quot; by Xiaohe Cheng"
 collection: publications
-permalink: /publication/2022-09-H-Diplo-Review
+permalink: /publication/2022-01-H-Diplo-Review
 # excerpt: 'Employing archives from China, the United States, and Russia, this article explores the question of how China chose its binding strategy to stop North Korea from tilting towards the Soviet Union in the late 1960s.'
 date: 2022-09-14
 venue: 'H-Diplo'
