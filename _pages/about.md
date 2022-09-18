@@ -14,6 +14,6 @@ I am a postdoctoral fellow in the [China and the World Program](https://cwp.sipa
 
 I have taught introductory-level courses on international politics at Boston College and Wellesley College, and I am teaching a graduate seminar on Chinese foreign policy at Columbia University. I also serve as guest lecturer in other courses.
 
-I receive my Ph.D. in Political Science from Boston College and hold a B.A. from Tsinghua University. In 2020-2021 I was a [Hans J. Morgenthau Fellow](https://ndisc.nd.edu/people/opportunities/the-notre-dame-international-security-center-hans-j-morgenthau-fellows) at the [Notre Dame International Security Center](https://ndisc.nd.edu/). I also contribute to the Fletcher School’s [Rising Power Alliances project](https://sites.tufts.edu/cierp/rising-power-alliances-project/) at Tufts University.
+I hold a Ph.D. in Political Science from Boston College and B.A. from Tsinghua University. In 2020-2021 I was a [Hans J. Morgenthau Fellow](https://ndisc.nd.edu/people/opportunities/the-notre-dame-international-security-center-hans-j-morgenthau-fellows) at the [Notre Dame International Security Center](https://ndisc.nd.edu/). I also contribute to the Fletcher School’s [Rising Power Alliances project](https://sites.tufts.edu/cierp/rising-power-alliances-project/) at Tufts University.
 
 You can contact me at: cy2687@columbia.edu
