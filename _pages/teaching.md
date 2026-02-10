@@ -10,7 +10,7 @@ I teach undergraduate and graduate courses on international politics and Chinese
 
 ## Teaching Interests
 
-Use of Force • Alliance Politics • East Asian Security • Chinese Foreign Policy • Research Methods
+Use of Force • Alliance Politics • East Asian Security • Chinese Foreign Policy • Qualitative and Quantitative Methods
 
 ---
 
@@ -19,27 +19,28 @@ Use of Force • Alliance Politics • East Asian Security • Chinese Foreign P
 ### Syracuse University
 
 **PSC 300: Chinese Foreign Policy**  
+Graduate seminar examining China's foreign policy strategies and behavior in the international system.
 
 **PSC 322: International Security**  
+Upper-level undergraduate course on contemporary security challenges and theories of international conflict.
 
 **IRP 201: International Relations Research Methods**  
+Undergraduate course introducing qualitative and quantitative research methods in political science.
 
 **PSC 420/IRP 400: East Asia and the World**  
+Advanced undergraduate/graduate course analyzing East Asian international relations and regional security dynamics.
 
 ### Columbia University
 
-**REGN U6855: Chinese Foreign Policy** (Fall 2022)  
-[View Syllabus]({{ base_path }}/files/REGN U6855_Chinese Foreign Policy Syllabus.pdf){: .btn .btn--primary}
+**REGN U6855: Chinese Foreign Policy** (Fall 2022)
 
 ### Boston College
 
-**POLI 1081.01: Introduction to International Politics** (Spring 2021)  
-[View Syllabus]({{ base_path }}/files/POLI1081.01_Intro to IR Syllabus.pdf){: .btn .btn--primary}
+**POLI 1081.01: Introduction to International Politics** (Spring 2021)
 
 ### Wellesley College
 
-**POL3-221-01: World Politics** (Spring 2022)  
-[View Syllabus]({{ base_path }}/files/POL3-221-01_World Politics Syllabus.pdf){: .btn .btn--primary}
+**POL3-221-01: World Politics** (Spring 2022)
 
 ---
 

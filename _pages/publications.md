@@ -9,15 +9,9 @@ author_profile: true
 
 My research interests lie at the intersection of international security and Chinese foreign policy. I explore how China manages its sphere of influence, wedge and binding strategies in power politics, and states' behavior in alliances.
 
-You can also find my articles on <u><a href="https://scholar.google.com/citations?user=AfaD88sAAAAJ&hl=en&oi=ao">my Google Scholar profile</a></u>.
+You can also find my articles on <a href="https://scholar.google.com/citations?user=6FFkkDwAAAAJ&hl=en">my Google Scholar profile</a>.
 
----
 
-## Book Project
-
-**China's Alliance Balancing Strategies: From the Cold War to the Contemporary Era**
-
-My book project explores how China has managed its alliance relationships and sphere of influence from the Cold War period to the present day, examining the evolution of Chinese strategic thinking and alliance behavior.
 
 ---
 
@@ -26,12 +20,6 @@ My book project explores how China has managed its alliance relationships and sp
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
-
----
-
-## Working Papers & Works in Progress
-
-*Information about ongoing research projects available upon request.*
 
 <style>
 .page__content h2 {
