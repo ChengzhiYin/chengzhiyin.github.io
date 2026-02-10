@@ -1,5 +1,5 @@
 ---
-title: "China's Military Assistance to North Vietnam Revisited"
+title: "China''s Military Assistance to North Vietnam Revisited"
 collection: publications
 permalink: /publication/2019-01-China-Military-Assistance-to-NVN
 excerpt: 'Using archives, this article traces and explains changes in Beijing's Vietnam policy from 1958 to 1962.'
