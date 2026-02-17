@@ -1,7 +1,12 @@
 ---
+layout: archive
 permalink: /talks/
 title: "Invited Talks"
+author_profile: true
 ---
 
-- "Evolvement, Change, Consistency in China’s Diplomatic Policy Since the Reform and Opening Era"
-  - [V-BRYGE](https://vbryge.squarespace.com/), March 21, 2022. Virtual.
+{% include base_path %}
+
+{% for post in site.talks reversed %}
+  {% include archive-single-talk.html %}
+{% endfor %}
