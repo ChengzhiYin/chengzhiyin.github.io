@@ -1,0 +1,11 @@
+---
+title: "Shaping its Periphery: China's Strategies and Its Sphere of Influence"
+collection: talks
+type: "Invited Talk"
+permalink: /talks/2022-11-Harvard-Club-Talk
+venue: "Harvard Club of New York"
+date: 2022-11-01
+location: "New York, NY"
+---
+
+Invited talk on China's strategies for managing its sphere of influence and periphery relations.
