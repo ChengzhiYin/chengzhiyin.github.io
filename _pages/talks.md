@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: archive
 permalink: /talks/
 title: "Invited Talks"
 author_profile: true
