@@ -19,5 +19,3 @@ My book project explores China's alliance balancing strategies from the Cold War
 I hold a Ph.D. in Political Science from Boston College and B.A. from Tsinghua University. Before joining Syracuse University, I was a postdoctoral fellow in the [China and the World Program](https://cwp.sipa.columbia.edu/people/chengzhi-yin) at Columbia University. In 2020-2021, I was a [Hans J. Morgenthau Fellow](https://ndisc.nd.edu/people/opportunities/the-notre-dame-international-security-center-hans-j-morgenthau-fellows) at the [Notre Dame International Security Center](https://ndisc.nd.edu/). I also contribute to the Fletcher School's [Rising Power Alliances project](https://sites.tufts.edu/cierp/rising-power-alliances-project/) at Tufts University.
 
 You can reach me at: [cyin06@syr.edu](mailto:cyin06@syr.edu)
-
-{% include person-schema.html %}
