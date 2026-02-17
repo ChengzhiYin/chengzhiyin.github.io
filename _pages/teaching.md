@@ -2,6 +2,7 @@
 permalink: /teaching/
 title: "Teaching"
 author_profile: true
+excerpt: "Courses on international politics, Chinese foreign policy, international security, and research methods taught by Chengzhi Yin at Syracuse University"
 ---
 
 {% include base_path %}

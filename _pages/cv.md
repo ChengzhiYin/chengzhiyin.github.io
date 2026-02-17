@@ -3,6 +3,7 @@ layout: archive
 title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
+excerpt: "CV of Chengzhi Yin, Assistant Professor of Political Science at Syracuse University"
 redirect_from:
   - /resume
 ---

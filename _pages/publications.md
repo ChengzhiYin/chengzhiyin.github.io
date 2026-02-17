@@ -3,6 +3,7 @@ layout: archive
 title: "Research"
 permalink: /publications/
 author_profile: true
+excerpt: "Research publications on Chinese foreign policy, international security, alliance politics, and East Asian security by Chengzhi Yin"
 ---
 
 {% include base_path %}
@@ -11,9 +12,8 @@ My research interests lie at the intersection of international security and Chin
 
 You can also find my articles on <a href="https://scholar.google.com/citations?user=6FFkkDwAAAAJ&hl=en">my Google Scholar profile</a>.
 
-
-
 ---
+
 
 ## Peer-Reviewed Publications
 
