@@ -8,4 +8,3 @@ date: 2022-11-29
 location: "New York, NY"
 ---
 
-Invited talk on China's strategies for managing its sphere of influence and periphery relations.
