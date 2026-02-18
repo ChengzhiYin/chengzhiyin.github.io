@@ -18,7 +18,7 @@ You can also find my articles on <a href="https://scholar.google.com/citations?u
 ## Peer-Reviewed Publications
 
 {% for post in site.publications reversed %}
-  {% include archive-single-no-link.html %}
+  {% include archive-single.html %}
 {% endfor %}
 
 <style>
