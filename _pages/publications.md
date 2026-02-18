@@ -8,8 +8,6 @@ excerpt: "Research publications on Chinese foreign policy, international securit
 
 {% include base_path %}
 
-My research interests lie at the intersection of international security and Chinese foreign policy. I explore how China manages its sphere of influence, wedge and binding strategies in power politics, and states' behavior in alliances.
-
 You can also find my articles on <a href="https://scholar.google.com/citations?user=6FFkkDwAAAAJ&hl=en">my Google Scholar profile</a>.
 
 ---
@@ -17,7 +15,7 @@ You can also find my articles on <a href="https://scholar.google.com/citations?u
 ## Peer-Reviewed Publications
 
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  {% include archive-single-no-link.html %}
 {% endfor %}
 
 <style>
