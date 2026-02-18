@@ -38,18 +38,13 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>alt=""&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% endif %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% if post.excerpt and site.read_more != 'enabled' %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p class="archive__item-excerpt" itemprop="description"&gt;{{ post.excerpt | markdownify }}&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% elsif post.excerpt and site.read_more == 'enabled' %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p class="archive__item-excerpt" itemprop="description"&gt;&lt;p&gt;{{ post.excerpt | markdownify | remove: '&lt;p&gt;' | remove: '&lt;/p&gt;' }}&lt;strong&gt;&lt;a href="{{ base_path }}{{ post.url }}" rel="permalink"&gt; Read more&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% endif %}</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% if post.citation and post.paperurl %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;Recommended citation: {{ post.citation }} &lt;a href="{{ post.paperurl }}"&gt;&lt;u&gt;{{ post.paperurl }}&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;{{ post.citation | replace: post.paperurl, "" | strip }} &lt;a href="{{ post.paperurl }}"&gt;{{ post.paperurl }}&lt;/a&gt;&lt;/p&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% elsif post.citation %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;Recommended citation: {{ post.citation }} &lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;{{ post.citation }}&lt;/p&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% elsif post.paperurl %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;Download &lt;a href="{{ post.paperurl }}"&gt;&lt;u&gt;here&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;a href="{{ post.paperurl }}"&gt;{{ post.paperurl }}&lt;/a&gt;&lt;/p&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% endif %}</span></p>
 <p class="p2"><span class="s1"></span><br></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/article&gt;</span></p>
