@@ -6,5 +6,5 @@ excerpt: 'This article analyzes the scholarly and policy debates in China regard
 date: 2014-09-01
 venue: 'Issues & Studies'
 paperurl: 'https://doi.org/10.7033/ISE.201409_50(3).0003'
-citation: 'Wang, Dong and Chengzhi Yin. "Mainland China Debates U.S. Pivot/Rebalancing to Asia." <i>Issues & Studies</i> 50, no. 3 (2014): 57-101. <a href="https://doi.org/10.7033/ISE.201409_50(3).0003">https://doi.org/10.7033/ISE.201409_50(3).0003</a>'
+citation: 'Wang, Dong and Chengzhi Yin. "Mainland China Debates U.S. Pivot/Rebalancing to Asia." <i>Issues & Studies</i> 50, no. 3 (2014): 57-101. https://doi.org/10.7033/ISE.201409_50(3).0003'
 ---
