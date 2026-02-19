@@ -15,7 +15,19 @@ You can also find my articles on <a href="https://scholar.google.com/citations?u
 ## Peer-Reviewed Publications
 
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  {% if post.title != "Review of 'The Chinese Advisory Groups in the First Indochina War' by Xiaohe Cheng" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+---
+
+## Other Publications
+
+{% for post in site.publications reversed %}
+  {% if post.title == "Review of 'The Chinese Advisory Groups in the First Indochina War' by Xiaohe Cheng" %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
 
 <style>
@@ -42,5 +54,10 @@ You can also find my articles on <a href="https://scholar.google.com/citations?u
   margin-top: 0.5em;
   font-size: 0.95em;
   color: #555;
+}
+
+/* Hide publication titles */
+.archive__item-title {
+  display: none !important;
 }
 </style>

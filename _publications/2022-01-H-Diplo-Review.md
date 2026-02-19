@@ -2,7 +2,6 @@
 title: "Review of 'The Chinese Advisory Groups in the First Indochina War' by Xiaohe Cheng"
 collection: publications
 permalink: /publication/2022-01-H-Diplo-Review
-excerpt: 'Book review of Xiaohe Cheng''s work on Chinese advisory groups in the First Indochina War.'
 date: 2022-09-14
 venue: 'H-Diplo'
 paperurl: 'https://networks.h-net.org/node/28443/discussions/10684768/h-diplo-article-review-1137-chinese-advisory-groups-first'
