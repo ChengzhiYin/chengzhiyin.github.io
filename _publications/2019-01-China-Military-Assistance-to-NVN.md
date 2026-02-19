@@ -1,4 +1,3 @@
-
 ---
 title: "China's Military Assistance to North Vietnam Revisited"
 collection: publications
