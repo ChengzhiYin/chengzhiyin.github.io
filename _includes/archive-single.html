@@ -1,117 +1,103 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">{% include base_path %}</span></p>
-<p class="p1"><span class="s1">{% if post.header.teaser %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% capture teaser %}{{ post.header.teaser }}{% endcapture %}</span></p>
-<p class="p1"><span class="s1">{% else %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% assign teaser = site.teaser %}</span></p>
-<p class="p1"><span class="s1">{% endif %}</span></p>
-<p class="p1"><span class="s1">{% if post.id %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% assign title = post.title | markdownify | remove: "&lt;p&gt;" | remove: "&lt;/p&gt;" %}</span></p>
-<p class="p1"><span class="s1">{% else %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% assign title = post.title %}</span></p>
-<p class="p1"><span class="s1">{% endif %}</span></p>
-<p class="p1"><span class="s1">&lt;div class="{{ include.type | default: "list" }}__item"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% if include.type == "grid" and teaser %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="archive__item-teaser"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img src=</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>{% if teaser contains "://" %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"{{ teaser }}"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>{% else %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"{{ teaser | prepend: "/images/" | prepend: base_path }}"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>{% endif %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>alt=""&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% endif %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 class="archive__item-title" itemprop="headline"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% if post.collection == 'publications' %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{{ title }}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% elsif post.link %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="{{ post.link }}"&gt;{{ title }}&lt;/a&gt; &lt;a href="{{ base_path }}{{ post.url }}" rel="permalink"&gt;&lt;i class="fa fa-link" aria-hidden="true" title="permalink"&gt;&lt;/i&gt;&lt;span class="sr-only"&gt;Permalink&lt;/span&gt;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% else %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="{{ base_path }}{{ post.url }}" rel="permalink"&gt;{{ title }}&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% endif %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% if post.read_time %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% elsif post.read_time and post.collection == 'posts' %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="page__meta"&gt;&lt;i class="fa fa-clock" aria-hidden="true"&gt;&lt;/i&gt; {% include read-time.html %}&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% endif %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% if post.collection == 'teaching' %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt; {{ post.type }}, &lt;i&gt;{{ post.venue }}&lt;/i&gt;, {{ post.date | default: "1900-01-01" | date: "%Y" }} &lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% elsif post.collection == 'publications' %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% if post.abstract %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;details&gt;&lt;summary&gt;Abstract&lt;/summary&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;blockquote&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{{ post.abstract }}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/blockquote&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/details&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% endif %}</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- MOVED: excerpt before citation --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% if post.excerpt %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="archive__item-excerpt" itemprop="description"&gt;{{ post.excerpt | markdownify }}&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% endif %}</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- citation and icon code --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% if post.citation %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{{ post.citation }}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% endif %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;br&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% if post.link %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="{{ post.link }}"&gt;&lt;i class="fas fa-fw fa-link zoom" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% endif %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% if post.paperurl %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="{{ post.paperurl }}"&gt;&lt;i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% endif %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% if post.code %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="{{ post.code }}"&gt;&lt;i class="fas fa-fw fa-code zoom" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% endif %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% if post.github %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="{{ post.github }}"&gt;&lt;i class="fab fa-fw fa-github zoom" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% endif %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% elsif post.collection == 'posts' and post.date %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="page__date"&gt;&lt;i class="fa fa-fw fa-calendar" aria-hidden="true"&gt;&lt;/i&gt; &lt;time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}"&gt;{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}&lt;/time&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% endif %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% if post.excerpt and post.collection == 'research' and site.read_more != 'enabled' %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="archive__item-excerpt" itemprop="description"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="{{ base_path }}{{ post.url }}" rel="permalink"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>{{ post.excerpt }}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="overlay"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% elsif post.excerpt and post.collection != 'publications' and site.read_more != 'enabled' %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p class="archive__item-excerpt" itemprop="description"&gt;{{ post.excerpt | markdownify }}&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% elsif post.excerpt and site.read_more == 'enabled' %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="archive__item-excerpt" itemprop="description"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;{{ post.excerpt | markdownify | remove: '&lt;p&gt;' | remove: '&lt;/p&gt;' }}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;strong&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a href="{{ base_path }}{{ post.url }}" rel="permalink"&gt; Read more&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/strong&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% endif %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/article&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-</body>
-</html>
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        <img src=
+          {% if teaser contains "://" %}
+            "{{ teaser }}"
+          {% else %}
+            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+          {% endif %}
+          alt="">
+      </div>
+    {% endif %}
+
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if post.collection == 'publications' %}
+        {{ title }}
+      {% elsif post.link %}
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </h2>
+
+    {% if post.read_time %}
+    {% elsif post.read_time and post.collection == 'posts' %}
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+
+    {% if post.collection == 'teaching' %}
+      <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% elsif post.collection == 'publications' %}
+      {% if post.abstract %}
+        <details><summary>Abstract</summary>
+        <blockquote>
+        <p>
+        {{ post.abstract }}
+        </p>
+        </blockquote>
+        </details>
+      {% endif %}
+
+      <!-- citation and icon code -->
+      <p>
+      {% if post.citation %}
+        {{ post.citation }}
+      {% endif %}
+      <br>
+      {% if post.link %}
+        <a href="{{ post.link }}"><i class="fas fa-fw fa-link zoom" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if post.code %}
+        <a href="{{ post.code }}"><i class="fas fa-fw fa-code zoom" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if post.github %}
+        <a href="{{ post.github }}"><i class="fab fa-fw fa-github zoom" aria-hidden="true"></i></a>
+      {% endif %}
+      </p>
+    {% elsif post.collection == 'posts' and post.date %}
+      <p class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    {% endif %}
+
+    {% if post.excerpt and post.collection == 'research' and site.read_more != 'enabled' %}
+      <p class="archive__item-excerpt" itemprop="description">
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">
+        <div class="container">
+          {{ post.excerpt }}
+          <div class="overlay">
+          </div>
+        </div>
+        </a>
+      </p>
+    {% elsif post.excerpt and site.read_more != 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% elsif post.excerpt and site.read_more == 'enabled' %}
+      <p class="archive__item-excerpt" itemprop="description">
+        <p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+          <strong>
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a>
+          </strong>
+        </p>
+      </p>
+    {% endif %}
+
+  </article>
+</div>
