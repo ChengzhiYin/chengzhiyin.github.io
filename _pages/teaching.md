@@ -11,7 +11,7 @@ I teach undergraduate and graduate courses on international politics and Chinese
 
 ## Teaching Interests
 
-Use of Force • Alliance Politics • East Asian Security • Chinese Foreign Policy • Qualitative and Quantitative Methods
+Alliance Politics • East Asian Security • Chinese Foreign Policy • Research Methods
 
 ---
 
@@ -20,16 +20,16 @@ Use of Force • Alliance Politics • East Asian Security • Chinese Foreign P
 ### Syracuse University
 
 **PSC 300: Chinese Foreign Policy**  
-Graduate seminar examining China's foreign policy strategies and behavior in the international system.
+Undergraduate course examining the causes, conduct, and implications of Chinese foreign policy.
 
 **PSC 322: International Security**  
-Upper-level undergraduate course on contemporary security challenges and theories of international conflict.
+ndergraduate course on contemporary security challenges and theories of international conflict.
 
 **IRP 201: International Relations Research Methods**  
 Undergraduate course introducing qualitative and quantitative research methods in political science.
 
 **PSC 420/IRP 400: East Asia and the World**  
-Advanced undergraduate/graduate course analyzing East Asian international relations and regional security dynamics.
+Advanced undergraduate course analyzing East Asian international relations and regional security dynamics.
 
 ### Columbia University
 
