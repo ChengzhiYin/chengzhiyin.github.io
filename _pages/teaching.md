@@ -23,7 +23,7 @@ Alliance Politics • East Asian Security • Chinese Foreign Policy • Researc
 Undergraduate course examining the causes, conduct, and implications of Chinese foreign policy.
 
 **PSC 322: International Security**  
-ndergraduate course on contemporary security challenges and theories of international conflict.
+Undergraduate course on contemporary security challenges and theories of international conflict.
 
 **IRP 201: International Relations Research Methods**  
 Undergraduate course introducing qualitative and quantitative research methods in political science.
@@ -37,7 +37,7 @@ Advanced undergraduate course analyzing East Asian international relations and r
 
 ### Boston College
 
-**POLI 1081.01: Introduction to International Politics** (Spring 2021)
+**POLI 1081.01: Introduction to International Politics** (Spring 2022)
 
 ### Wellesley College
 
