@@ -1,0 +1,76 @@
+{% include base_path %} {% if page.author and site.data.authors[page.author] %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %} {% endif %}
+{% if author.avatar contains "://" %}  {% else %}  {% endif %}
+{{ author.name }}
+{% if author.bio %}
+{{ author.bio }}
+{% endif %}
+Follow
+{% if author.location %}
+	•	{{ author.location }}
+{% endif %} {% if author.employer %}
+	•	{{ author.employer }}
+{% endif %} {% if author.uri %}
+	•	{{ site.data.ui-text[site.locale].website_label | default: "Website" }}
+{% endif %} {% if author.email %}
+	•	{{ site.data.ui-text[site.locale].email_label | default: "Email" }}
+{% endif %} {% if author.keybase %}
+	•	Keybase
+{% endif %} {% if author.researchgate %}
+	•	ResearchGate
+{% endif %} {% if author.twitter %}
+	•	Twitter
+{% endif %} {      {% endif %}
+      {% if author.bluesky %}
+        <li><a href="https://bsky.app/profile/{{ author.bluesky }}"><i class="fa fa-fw fa-cloud" aria-hidden="true"></i> Bluesky</a></li>
+{% endif %}
+{% if author.facebook %}
+	•	Facebook
+{% endif %} {% if author.google_plus %}
+	•	Google+
+{% endif %} {% if author.linkedin %}
+	•	LinkedIn
+{% endif %} {% if author.xing %}
+	•	XING
+{% endif %} {% if author.instagram %}
+	•	Instagram
+{% endif %} {% if author.tumblr %}
+	•	Tumblr
+{% endif %} {% if author.bitbucket %}
+	•	Bitbucket
+{% endif %} {% if author.github %}
+	•	Github
+{% endif %} {% if author.stackoverflow %}
+	•	Stackoverflow
+{% endif %} {% if author.lastfm %}
+	•	Last.fm
+{% endif %} {% if author.dribbble %}
+	•	Dribbble
+{% endif %} {% if author.pinterest %}
+	•	Pinterest
+{% endif %} {% if author.foursquare %}
+	•	Foursquare
+{% endif %} {% if author.steam %}
+	•	Steam
+{% endif %} {% if author.youtube %}
+	•	YouTube
+{% endif %} {% if author.soundcloud %}
+	•	Soundcloud
+{% endif %} {% if author.weibo %}
+	•	Weibo
+{% endif %} {% if author.flickr %}
+	•	Flickr
+{% endif %} {% if author.codepen %}
+	•	CodePen
+{% endif %} {% if author.vine %}
+	•	Vine
+{% endif %} {% if author.googlescholar %}
+	•	Google Scholar
+{% endif %} {% if author.pubmed %}
+	•	PubMed
+{% endif %} {% if author.orcid %}
+	•	 ORCID
+{% endif %} {% if author.impactstory %}
+	•	Impactstory
+{% endif %} {% if author.wikipedia %}
+	•	Wikipedia
+{% endif %}
