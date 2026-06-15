@@ -1,0 +1,7 @@
+/* Make profile photo circular */
+.author__avatar img {
+  border-radius: 50% !important;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
